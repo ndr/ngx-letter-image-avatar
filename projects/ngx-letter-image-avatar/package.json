@@ -8,7 +8,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/ndr/ngx-letter-image-avatar.git"
-  }
+  },
   "peerDependencies": {
     "@angular/common": "^9.0.6",
     "@angular/core": "^9.0.6",
