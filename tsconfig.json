@@ -17,7 +17,13 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-letter-image-avatar": [
+        "dist/ngx-letter-image-avatar/ngx-letter-image-avatar",
+        "dist/ngx-letter-image-avatar"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
