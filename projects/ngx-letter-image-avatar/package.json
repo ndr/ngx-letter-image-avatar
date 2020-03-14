@@ -1,6 +1,14 @@
 {
   "name": "ngx-letter-image-avatar",
   "version": "0.1.0",
+  "license": "MIT",
+  "author": "Andrii Cherepovskyi",
+  "description": "Directive for generating letter avatar (initials) in case no src provided",
+  "keywords": ["angular", "directive", "letter avatar", "image avatar", "directive"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ndr/ngx-letter-image-avatar.git"
+  }
   "peerDependencies": {
     "@angular/common": "^9.0.6",
     "@angular/core": "^9.0.6",
