@@ -1,6 +1,6 @@
 {
   "name": "ngx-letter-image-avatar",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "license": "MIT",
   "author": "Andrii Cherepovskyi",
   "description": "Directive for generating letter avatar (initials) in case no src provided",
