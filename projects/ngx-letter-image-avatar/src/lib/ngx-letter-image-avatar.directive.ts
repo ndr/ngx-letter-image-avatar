@@ -136,6 +136,5 @@ export class NgxLetterImageAvatarDirective implements OnChanges {
       ...NgxLetterImageAvatarDirective.defaults,
       ...inputSettings
     };
-    console.log(this.normalizedSettings);
   }
 }

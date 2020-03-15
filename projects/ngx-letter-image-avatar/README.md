@@ -1,24 +1,49 @@
-# NgxLetterImageAvatar
+# [ngxLetterImageAvatar]
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
+[ngxLetterImageAvatar] is an Angular2+ directive, which allows to create image (png) avatars according to first letters of strings (initials)
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name --project ngx-letter-image-avatar` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-letter-image-avatar`.
-> Note: Don't forget to add `--project ngx-letter-image-avatar` or else it will be added to the default project in your `angular.json` file. 
+Install ngxLetterImageAvatar directive using NPM:
+```bash
+npm install ngx-letter-image-avatar
+```
 
-## Build
+## Usage
+1. Import NgxLetterImageAvatar module:
+```typescript
+import { NgModule } from '@angular/core';
+import { NgxLetterImageAvatarModule } from 'ngx-letter-image-avatar';
 
-Run `ng build ngx-letter-image-avatar` to build the project. The build artifacts will be stored in the `dist/` directory.
+@NgModule({
+  ...
+  imports: [
+    ...
+    NgxLetterImageAvatarModule
+  ]
+})
+export class AppModule {}
+```
 
-## Publishing
 
-After building your library with `ng build ngx-letter-image-avatar`, go to the dist folder `cd dist/ngx-letter-image-avatar` and run `npm publish`.
+## Examples
+```html
+<img class="app-avatar" ngxLetterImageAvatar="John Doe" src="/assets/images/avatar.png" alt="avatar">
+<img class="app-avatar" ngxLetterImageAvatar="John Doe" alt="avatar">
+<img class="app-avatar" [ngxLetterImageAvatar]="{ name: 'John Doe' }" alt="avatar">
+<img class="app-avatar" [ngxLetterImageAvatar]="{ name: 'Good day to you' }" alt="avatar">
+```
+![NgxLetterImageAvatar directive preview](https://raw.githubusercontent.com/ndr/ngx-letter-image-avatar/master/src/assets/images/screenshot.png)
 
-## Running unit tests
-
-Run `ng test ngx-letter-image-avatar` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Options
+```typescript
+// you can pass as [ngxLetterImageAvatar] input object of type INgxLetterImageAvatarSettings or string (behave as name)
+export interface INgxLetterImageAvatarSettings {
+  name?: string; // string to get initials
+  size?: number; // size. default = 500
+  font?: string; // default = 'Arial'
+  fontColor?: string; // default = '#FFFFFF'
+  fill?: string; // default one of set depends of initials
+  placeholder?: string; // default = '?'
+}
+```
