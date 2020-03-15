@@ -16,7 +16,7 @@ export class NgxLetterImageAvatarDirective implements OnChanges {
 
   public static defaults = {
     size: 500,
-    initials: '?',
+    placeholder: '?',
     font: 'Arial',
     fontColor: '#fff'
   };
@@ -66,7 +66,7 @@ export class NgxLetterImageAvatarDirective implements OnChanges {
   }
 
   public get charIndex(): number {
-    return (this.initials === NgxLetterImageAvatarDirective.defaults.initials ? 72 : this.initials.charCodeAt(0)) - 64;
+    return (this.initials === NgxLetterImageAvatarDirective.defaults.placeholder ? 72 : this.initials.charCodeAt(0)) - 64;
   }
 
   public get colorIndex(): number {
