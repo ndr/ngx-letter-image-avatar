@@ -47,3 +47,6 @@ export interface INgxLetterImageAvatarSettings {
   placeholder?: string; // default = '?'
 }
 ```
+
+## Demo
+https://stackblitz.com/edit/angular-2r4zhe
